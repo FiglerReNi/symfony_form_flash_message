@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        {% include ('flash-messages.html.twig') %}
+        <div>
+           {{ form(our_form) }}
+        </div>
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+    <style>
+        .container{
+            margin-top: 40px;
+        }
+    </style>
+{% endblock %}
